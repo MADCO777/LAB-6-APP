@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Miguel Angel David Carranza Osorio"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif" />
+
+    <!-- Contador -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/btnDecrement"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="−"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+
+            android:layout_marginEnd="32dp"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="64sp"
+            android:textStyle="normal"
+            android:textColor="#333333"
+            android:layout_marginHorizontal="32dp"
+            android:fontFamily="sans-serif" />
+
+        <Button
+            android:id="@+id/btnIncrement"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="32dp"
+            android:stateListAnimator="@null"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+
+    <!-- Separador -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Estadísticas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total incrementos:"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/tvTotalIncrements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total decrementos:"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/tvTotalDecrements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Valor máximo:"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/tvMaxValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Valor mínimo:"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/tvMinValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total cambios:"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif" />
+            <TextView
+                android:id="@+id/tvTotalChanges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Historial -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historial:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexboxHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start"
+        app:alignItems="flex_start"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón Reiniciar -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Reiniciar"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout>
